@@ -1,10 +1,10 @@
-﻿namespace ClassLibrary1
+﻿namespace M3UGeneratorCore
 {
-    public static class Extensions
+    internal static class Extensions
     {
-        public static ConsoleConfig GetConfig(this EmulatedConsole grade)
+        internal static ConsoleConfig GetConsoleConfig(this EmulatedConsole console)
         {
-            return grade >= minPassing;
+            return M3UGeneratorCore.ConsoleConfigurations[(int)console];
         }
     }
 }

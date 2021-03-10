@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>M3UGeneratorCore</AssemblyName>
+    <RootNamespace>M3UGeneratorCore</RootNamespace>
   </PropertyGroup>
 
 </Project>

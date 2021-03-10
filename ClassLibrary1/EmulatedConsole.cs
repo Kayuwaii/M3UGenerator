@@ -1,8 +1,8 @@
-﻿namespace ClassLibrary1
+﻿namespace M3UGeneratorCore
 {
     public enum EmulatedConsole
     {
-        PSX,
-        PS2
+        PSX = 0,
+        PS2 = 1
     }
 }
