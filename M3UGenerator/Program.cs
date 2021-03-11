@@ -8,7 +8,7 @@ namespace M3UGenerator
         private static void Main(string[] args)
         {
             M3UGeneratorCore.M3UGeneratorCore.SetConsole(EmulatedConsole.PSX);
-            M3UGeneratorCore.M3UGeneratorCore.GenerateM3U(@"G:\GAMES\ROMS\PSX\Xenogears");
+            M3UGeneratorCore.M3UGeneratorCore.GenerateM3U(@"G:\GAMES\ROMS\PSX\Persona 2 - Eternal Punishment", relative: true);
         }
     }
 }
