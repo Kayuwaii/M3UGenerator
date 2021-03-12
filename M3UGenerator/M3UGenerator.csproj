@@ -3,12 +3,10 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <ApplicationIcon />
-    <StartupObject>M3UGenerator.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\M3UGeneratorCore.csproj" />
+    <ProjectReference Include="..\M3UGeneratorCore\M3UGeneratorCore.csproj" />
   </ItemGroup>
 
 </Project>
