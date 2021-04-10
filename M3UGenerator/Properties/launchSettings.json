@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "M3UGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "--EmulationTarget=PSXA"
+    }
+  }
+}

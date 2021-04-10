@@ -1,6 +1,7 @@
 ﻿using M3UGeneratorCore;
 using System;
 using System.IO;
+using System.Threading.Channels;
 
 namespace M3UGenerator
 {
@@ -45,13 +46,12 @@ namespace M3UGenerator
                             break;
 
                         case "--EmulationTarget":
-                            try
+                            if (!Enum.TryParse<EmulatedConsole>(parsedParam[1], false, out selConsole))
                             {
-                                selConsole = Enum.Parse<EmulatedConsole>(parsedParam[1]);
+                                Console.WriteLine("Invalid value for --EmulationTarget");
+                                return;
                             }
-                            catch (Exception ex)
-                            {
-                            }
+
                             break;
                     }
                 }
