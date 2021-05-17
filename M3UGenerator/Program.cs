@@ -17,9 +17,18 @@ namespace M3UGenerator
         private static void Main(string[] args)
         {
             ParseParams(args);
+            if (help)
+            {
+                ShowHelpAndClose();
+            }
 
             M3UGeneratorCore.M3UGeneratorCore.SetConsole(selConsole);
             M3UGeneratorCore.M3UGeneratorCore.GenerateM3U(ogPath, outName, destPath, recursive);
+        }
+
+        private static void ShowHelpAndClose()
+        {
+            throw new NotImplementedException();
         }
 
         private static void ParseParams(string[] args)
