@@ -16,7 +16,13 @@
             },
             new ConsoleConfig
             {
-                FullName= "Sony - PlayStation 2",
+                FullName = "Sony - PlayStation 2",
+                DiscExtension = ".iso",
+                DiscDataExtension =".iso"
+            },
+            new ConsoleConfig
+            {
+                FullName = "Nintendo - GameCube",
                 DiscExtension = ".iso",
                 DiscDataExtension =".iso"
             }

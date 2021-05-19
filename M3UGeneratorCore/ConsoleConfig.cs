@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace M3UGeneratorCore
 {
+    /// <summary>
+    /// Console Details & Config
+    /// </summary>
     public class ConsoleConfig
     {
         /// <summary>

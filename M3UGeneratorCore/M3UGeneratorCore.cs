@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace M3UGeneratorCore
 {
@@ -18,7 +19,7 @@ namespace M3UGeneratorCore
         /// <param name="selectedConsole">The desired console from the avaliable ones.</param>
         public static void SetConsole(EmulatedConsole selectedConsole)
         {
-            CurrentConsoleConfig = selectedConsole.GetConsoleConfig();
+            CurrentConsoleConfig = selectedConsole.GetConsoleConfig(true);
         }
 
         /// <summary>

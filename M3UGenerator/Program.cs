@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Threading.Channels;
 
+
 namespace M3UGenerator
 {
     public class M3UGenerator
@@ -16,7 +17,7 @@ namespace M3UGenerator
 
         private static void Main(string[] args)
         {
-            ParseParams(args);
+            ParseParams(args); //Parse Parameters from console
             if (help)
             {
                 ShowHelpAndClose();
@@ -31,12 +32,16 @@ namespace M3UGenerator
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Parses the user provided parameters.
+        /// </summary>
+        /// <param name="args">The console parameters</param>
         private static void ParseParams(string[] args)
         {
             foreach (var param in args)
             {
                 if (param.StartsWith("-r")) recursive = true;
-                if (param.StartsWith("-h")) help = true;
+                else if (param.StartsWith("-h")) help = true;
                 else
                 {
                     var parsedParam = param.Split("=");
